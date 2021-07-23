@@ -166,9 +166,10 @@ else
 endif
 
 	@#copy firmware images to target folder
-	@cp -fr lib/firmware/rtlwifi/ $(FIRMWAREDIR)/
-	@cp -fr lib/firmware/rtl_bt/ $(FIRMWAREDIR)/
-	@cp -fr lib/modprobe.d/ $(LIB)/
+	@cp -fr ./lib/firmware/rtlwifi/ $(FIRMWAREDIR)/
+	@cp -fr ./lib/firmware/rtl_bt/ $(FIRMWAREDIR)/
+	@cp -fr ./lib/modprobe.d/ $(LIB)/
+	@cp -fr ./Realtek-Firmware-License.txt $(FIRMWAREDIR)rtlwifi/
 	@echo "Install rtlwifi SUCCESS"
 
 uninstall:
